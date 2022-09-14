@@ -6,30 +6,29 @@ import { FC } from 'react';
 
 const Home: FC = () => {
     const { data: user } = useQueryUser();
-    console.log(user);
 
     return (
         <Layout>
             {user ? (
                 <VStack>
                     <Image
-                        src={user.image}
                         alt={user.name}
                         borderRadius="full"
                         boxSize="100px"
+                        src={user.image}
                     />
                     <Text>Email: {user.email}</Text>
                     <Text>Name: {user.name}</Text>
                     <Button
-                        onClick={() => signOut()}
                         bg="blue.900"
                         color="white"
+                        onClick={() => signOut()}
                     >
                         Sign out
                     </Button>
                 </VStack>
             ) : (
-                <Button onClick={() => signIn()} bg="blue.900">
+                <Button bg="blue.900" onClick={() => signIn()}>
                     Sign in
                 </Button>
             )}

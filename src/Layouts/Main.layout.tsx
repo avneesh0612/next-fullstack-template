@@ -10,6 +10,7 @@ const Layout: FC<ILayoutProps> = ({ children }) => {
         <Box
             alignItems="center"
             bgColor="black"
+            color="white"
             display="flex"
             flexDir="column"
             justifyContent="center"
@@ -17,7 +18,6 @@ const Layout: FC<ILayoutProps> = ({ children }) => {
             overflowX="hidden"
             textAlign="center"
             w="100vw"
-            color="white"
         >
             {children}
         </Box>
