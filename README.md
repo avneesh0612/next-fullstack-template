@@ -1,5 +1,7 @@
 <h1 align="center">Welcome to FullStack Next.js template 👋</h1>
 
+![FullStack Next.js template](/public/og.png)
+
 > A fullstack next.js template with all the fun stuff like next auth, mongodb, prisma, chakra ui
 
 ### ✨ [Demo](http://next-fullstack-template.vercel.app/)
