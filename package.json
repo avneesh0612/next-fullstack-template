@@ -1,0 +1,48 @@
+{
+    "version": "0.1.0",
+    "author": {
+        "name": "Avneesh Agarwal",
+        "email": "avneeshagarwal0612@gmail.com",
+        "url": "https://avneesh.tech"
+    },
+    "name": "next-fullstack-template",
+    "license": "GPL-3.0",
+    "private": true,
+    "scripts": {
+        "dev": "prisma generate --schema=./src/prisma/schema.prisma && next dev",
+        "build": "prisma generate --schema=./src/prisma/schema.prisma && next build",
+        "start": "next start",
+        "lint": "next lint",
+        "format": "prettier --write .",
+        "format:check": "prettier --check ."
+    },
+    "dependencies": {
+        "@chakra-ui/react": "^2.3.2",
+        "@emotion/react": "^11.10.4",
+        "@emotion/styled": "^11.10.4",
+        "@next-auth/prisma-adapter": "^1.0.4",
+        "@prisma/client": "^4.3.1",
+        "axios": "^0.27.2",
+        "framer-motion": "^7.3.4",
+        "next": "^12.3.0",
+        "next-auth": "^4.10.3",
+        "nextjs-progressbar": "^0.0.14",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-query": "^3.39.2"
+    },
+    "devDependencies": {
+        "@trivago/prettier-plugin-sort-imports": "^3.3.0",
+        "@types/node": "18.7.18",
+        "@types/react": "^18.0.20",
+        "@types/react-dom": "^18.0.6",
+        "eslint": "^8.23.1",
+        "eslint-config-next": "^12.3.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-react": "^7.31.8",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "prettier": "^2.7.1",
+        "typescript": "^4.8.3"
+    }
+}
